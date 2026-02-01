@@ -1,0 +1,43 @@
+{
+  "id": 11362,
+  "title": "Convert Task Ideas to Implementation Plans with GPT-4o, Slack & Google Sheets",
+  "slug": "convert-task-ideas-to-implementation-plans-with-gpt-4o-slack-google-sheets-11362",
+  "description": "🚀 TURN YOUR RANDOM IDEAS INTO CONCRETE AUTOMATION SPECSThis workflow acts as your interactive \"n8n Consultant.\" Simply write down arough automation idea in Google Tasks (e.g., \"Send weather updates toTelegram\"), and the AI will research, design, and send a detailed n8nimplementation plan to your Slack.✨ Why is this workflow special?Unlike simple notification workflows, this features a Human-in-the-Loop reviewprocess. You don't just get a message; you get control. * Regenerate: Not satisfied with the AI's plan? Click a button in Slack to have the AI rewrite it instantly. * Archive: Happy with the plan? Click \"Approve\" to automatically save the detailed specs to Google Sheets and mark the task as complete.HOW IT WORKS 1. Fetch: The workflow periodically checks a specific Google Tasks list for new ideas. 2. AI Design: The AI (OpenAI) analyzes your idea and generates a structured plan, including node configuration and potential pitfalls. 3. Human Review: It sends the plan to Slack with interactive \"Approve\" and \"Regenerate\" buttons. The workflow waits for your input. * If Regenerate: The AI re-analyzes the idea and creates a new variation. * If Approve: The workflow proceeds to the next step. 4. Archive: The approved plan (Title, Nodes, Challenges) is saved to a Google Sheet for future development. 5. Close: The original Google Task is updated with a \"Processed\" flag.HOW TO SET UP 1. Google Tasks: Create a new list named \"n8n Ideas\". 2. Google Sheets: Create a new sheet with the following headers in the first row (A to H): * Date Added * Idea Title * Status * Recommended Nodes * Key Challenges * Improvement Ideas * Alternatives * Source Task ID 3. Credentials: Configure credentials for Google Tasks, Google Sheets, OpenAI, and Slack. 4. Configure Nodes: * [Step 1] Fetch New Ideas: Select your Task list. * [Step 4] Slack — Review & Approve: Select your target channel. * [Action] Archive to Sheets: Select your Spreadsheet and Sheet. * [Close] Mark Task Done: Select your Task list again.REQUIREMENTS * Google Tasks account * Google Sheets account * OpenAI API Key * Slack account",
+  "metadescription": "Turn rough automation ideas into detailed n8n specs with AI and human review. Submit via Google Tasks, manage in Slack, and archive to Google Sheets—learn more!",
+  "summary": "Transform any rough automation concept into a polished n8n implementation plan with interactive AI and human oversight.\n\nSubmit ideas via Google Tasks; AI analyzes, designs, and sends actionable specs to Slack.\nRegenerate plans instantly or approve for seamless archiving in Google Sheets—all from Slack's interactive buttons.\nFull human-in-the-loop: review, control, and refine every automation before moving forward.\nEasily track ideas, node setup, challenges, and improvement suggestions in your Google Sheet.\nSetup is simple: Connect Google Tasks, Sheets, Slack, and OpenAI; configure lists, sheets, and workflow nodes for instant productivity.",
+  "date": "30 Nov 2025",
+  "createdAtRaw": "2025-11-30T04:42:36.714+00:00",
+  "categories": [
+    "Engineering",
+    "AI Chatbot"
+  ],
+  "nodeTypes": [
+    "n8n-nodes-base.if",
+    "n8n-nodes-base.slack",
+    "n8n-nodes-base.filter",
+    "n8n-nodes-base.stickyNote",
+    "n8n-nodes-base.googleTasks",
+    "n8n-nodes-base.googleSheets",
+    "n8n-nodes-base.splitInBatches",
+    "@n8n/n8n-nodes-langchain.agent",
+    "n8n-nodes-base.scheduleTrigger",
+    "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+    "@n8n/n8n-nodes-langchain.outputParserStructured"
+  ],
+  "author": {
+    "name": "Shun Nakayama",
+    "username": "nakayama",
+    "avatar": "https://gravatar.com/avatar/fcb7806ac65b7bac02804305c0a4d527c70089cbd2ff95d1e44544f94fbcb8f4?r=pg&d=retro&size=200",
+    "verified": true
+  },
+  "popularity": 38,
+  "visitors": 71,
+  "inserters": 28,
+  "templateUrl": "https://n8n.io/workflows/11362",
+  "readme": "",
+  "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/11362-convert-task-ideas-to-implementation-plans-with-gpt-4o--slack---google-sheets.webp",
+  "complexityLevel": "advanced",
+  "templateData": null,
+  "price": 0,
+  "referalUrl": null
+}
